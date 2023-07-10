@@ -1,2 +1,0 @@
-1)Para ver los datos generados la url es : http://localhost:8080/getdatacontroller/listProduct/product_id/brand_id/fecha (ejemplo:2020-06-14 17.00)
-2) También se pueden lanzar los tests, los datos aparecen en consola.
