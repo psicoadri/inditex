@@ -1,0 +1,33 @@
+package main;
+
+public class CuentaAtras {
+
+	public static void main(String[] args) {
+		
+	
+	}
+	
+	public Integer atras(int numSegundos, int intervaloSegundos ) {
+		
+		int haciaAtras =0;
+		
+		do {
+			 haciaAtras = (numSegundos-1) - intervaloSegundos;
+			 
+			   try {
+		            //Ponemos a "Dormir" el programa durante los ms que queremos
+		            Thread.sleep(1*1000);
+		         } catch (Exception e) {
+		            System.out.println(e);
+		         }
+			   System.out.println(haciaAtras);
+			
+		} while (haciaAtras>=0);
+		
+		
+		return intervaloSegundos;
+		
+	}
+
+
+}

@@ -1,0 +1,16 @@
+1685443549720	Copy package
+1685443554764	Delete element
+1685443589243	Rename package 'com.zara.demo.model'
+1685443617969	Delete element
+1685444378896	Rename package 'com.example.demo.model.entuty'
+1685444409848	Rename package 'com.example.demo.service'
+1685444709662	Rename resource 'ITaskService'
+1685444752562	Delete element
+1685445476928	Delete element
+1685454448318	Rename type 'ITaskDao'
+1685454458488	Rename type 'TaskReository'
+1685455120449	Rename type 'ToDoList'
+1685455446059	Delete element
+1685481590206	Rename method 'miquery'
+1685481655666	Rename method 'findByQuery'
+1685481695248	Rename method 'findByProduct_id'
