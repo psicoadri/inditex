@@ -1,0 +1,16 @@
+Método getMaxUserOrderId:
+Mejora a nivel de SQL: La consulta ya utiliza un parámetro (idTienda), lo cual es bueno para prevenir inyecciones SQL. Sin embargo, la consulta sigue usando concatenación directa en la cadena de formato, lo cual no es óptimo. Recomendaría usar una consulta parametrizada utilizando ? en lugar de concatenar valores.
+Mejora a nivel de código: El uso de Hashtable no es recomendado, ya que es una clase antigua y sincronizada. En su lugar, se puede usar HashMap. Además, es mejor utilizar rs.getLong en lugar de rs.getInt cuando se recuperan valores long del ResultSet.
+
+
+Método copyUserOrders:
+Mejora a nivel de SQL: La consulta utiliza concatenación directa en la cadena de formato, lo cual puede llevar a problemas de seguridad por inyección SQL. Recomendaría usar consultas parametrizadas en su lugar.
+Mejora a nivel de código: No se requieren cambios adicionales a nivel de código.
+
+
+Método getUserMaxOrder:
+Mejora a nivel de SQL: La consulta contiene un error de sintaxis, falta un %s para completar la cláusula WHERE. Además, la consulta recupera todos los registros pero solo necesita el de mayor importe. Se puede usar ORDER BY y LIMIT 1 para obtener directamente el registro con el mayor importe.
+Mejora a nivel de código: Los parámetros userId, orderId, name y address están siendo utilizados para asignarles valores dentro del método, pero no se utilizarán fuera del alcance del método. Sugiero eliminar estos parámetros y en su lugar devolver un objeto o una clase que contenga los valores necesarios.
+
+Método getConnection:
+Devuelve un null, se crea el método para una conexión a mysql como ejemplo...
